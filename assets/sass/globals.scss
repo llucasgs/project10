@@ -1,3 +1,7 @@
+:root {
+  font-size: 62.5%;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,8 +9,20 @@
   font-family: "Archivo", sans-serif;
   font-style: normal;
   font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 140%;
 }
 
-:root {
-  font-size: 62.5%;
+a {
+  text-decoration: none;
+  color: inherit;
+  &:hover {
+    color: var(--brand-color-light);
+  }
+}
+
+h1,
+h2,
+h3 {
+  font: inherit;
 }

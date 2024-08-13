@@ -5,4 +5,12 @@
   --stroke-color: #1e293b;
   --text-color-primary: #f1f5f9;
   --text-color-secondary: #cbd5e1;
+
+  --font-family: "Archivo", sans-serif;
+  --h1: 800 2.4rem/135% var(--font-family);
+  --h2: 800 1.6rem/140% var(--font-family);
+  --h3: 800 1.4rem/140% var(--font-family);
+  --text-span: 600 1.4rem/145% var(--font-family);
+  // --text: 400 1.6rem/140% var(--font-family);
+  --text-small: 400 1.4rem/160% var(--font-family);
 }
