@@ -1,0 +1,26 @@
+@font-face {
+  font-family: "Archivo", sans-serif;
+  src: local(Archivo) url("../fonts/Archivo-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Archivo", sans-serif;
+  src: local(Archivo SemiBold) url("../fonts/Archivo-SemiBold.ttf")
+    format("truetype");
+  font-style: normal;
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Archivo", sans-serif;
+  src: local(Archivo Bold) url("../fonts/Archivo-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Archivo", sans-serif;
+  src: local(Archivo ExtraBold) url("../fonts/Archivo-ExtraBold.ttf")
+    format("truetype");
+  font-style: normal;
+  font-weight: 800;
+}
