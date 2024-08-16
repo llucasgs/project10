@@ -125,7 +125,19 @@ main {
 main #featured img {
   height: 100%;
   object-fit: cover;
+}
+
+.card {
+  position: relative;
   border-radius: 10px;
+  overflow: hidden;
+}
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  top: 50%;
+  background: linear-gradient(180deg, transparent 0%, #020617 100%);
 }
 
 /*# sourceMappingURL=index.css.map */
