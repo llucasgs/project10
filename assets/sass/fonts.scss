@@ -6,6 +6,13 @@
 }
 @font-face {
   font-family: "Archivo", sans-serif;
+  src: local(Archivo Medium) url("../fonts/Archivo-Medium.ttf")
+    format("truetype");
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Archivo", sans-serif;
   src: local(Archivo SemiBold) url("../fonts/Archivo-SemiBold.ttf")
     format("truetype");
   font-style: normal;

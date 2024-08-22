@@ -6,6 +6,12 @@
 }
 @font-face {
   font-family: "Archivo", sans-serif;
+  src: local(Archivo Medium) url("../fonts/Archivo-Medium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Archivo", sans-serif;
   src: local(Archivo SemiBold) url("../fonts/Archivo-SemiBold.ttf") format("truetype");
   font-style: normal;
   font-weight: 600;
@@ -60,6 +66,25 @@ img {
   max-width: 100%;
 }
 
+section header {
+  border-top: 1px solid var(--stroke-color);
+  padding-block: 12px 24px;
+  font: var(--text-span);
+}
+section header a {
+  justify-self: end;
+  align-items: center;
+  gap: 8px;
+}
+section header a span {
+  background-image: url(../icons/ArrowRight.svg);
+  width: 16px;
+  height: 16px;
+}
+section header a:hover span {
+  background-image: url(../icons/ArrowRight-hover.svg);
+}
+
 .grid {
   display: grid;
 }
@@ -80,6 +105,34 @@ img {
 
 .gap-16 {
   gap: 16px;
+}
+
+.text-2xl {
+  font: var(--h1);
+}
+
+.text-xl {
+  font: var(--h2);
+}
+
+.text-lg {
+  font: var(--h3);
+}
+
+.text-sm {
+  font: var(--text-small);
+}
+
+.content-tag {
+  display: inline-block;
+  background-color: var(--brand-color-dark);
+  padding: 4px 8px;
+  border-radius: 5px;
+  font: 500 1rem/1.2 var(--font-family);
+  text-transform: uppercase;
+  letter-spacing: 0.04rem;
+  color: var(--text-color-primary);
+  box-shadow: 0px 4px 16px rgba(2, 6, 23, 0.2509803922);
 }
 
 * {
@@ -121,10 +174,12 @@ img {
 
 main {
   margin-top: 40px;
+  gap: 80px;
 }
 main #featured img {
   height: 100%;
   object-fit: cover;
+  border-radius: 10px;
 }
 
 .card {
@@ -138,6 +193,36 @@ main #featured img {
   inset: 0;
   top: 50%;
   background: linear-gradient(180deg, transparent 0%, #020617 100%);
+}
+.card figcaption {
+  position: absolute;
+  bottom: 0;
+  padding: 24px;
+}
+.card figcaption:has(.text-lg) {
+  padding: 12px;
+}
+.card figcaption h2 {
+  margin-top: 8px;
+}
+
+#weekly > div {
+  grid-template-columns: repeat(4, 292px);
+}
+#weekly img {
+  height: 160px;
+}
+#weekly figure {
+  position: relative;
+}
+#weekly figure .content-tag {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+}
+#weekly figure p {
+  margin-top: 8px;
+  font-weight: 800;
 }
 
 /*# sourceMappingURL=index.css.map */

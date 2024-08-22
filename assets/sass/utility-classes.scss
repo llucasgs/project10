@@ -20,3 +20,31 @@
 .gap-16 {
   gap: 16px;
 }
+
+.text-2xl {
+  font: var(--h1);
+}
+
+.text-xl {
+  font: var(--h2);
+}
+
+.text-lg {
+  font: var(--h3);
+}
+
+.text-sm {
+  font: var(--text-small);
+}
+
+.content-tag {
+  display: inline-block;
+  background-color: var(--brand-color-dark);
+  padding: 4px 8px;
+  border-radius: 5px;
+  font: 500 1rem/1.2 var(--font-family);
+  text-transform: uppercase;
+  letter-spacing: 0.04rem;
+  color: var(--text-color-primary);
+  box-shadow: 0px 4px 16px #02061740;
+}
