@@ -107,6 +107,10 @@ section header a:hover span {
   gap: 16px;
 }
 
+.gap-32 {
+  gap: 32px;
+}
+
 .text-2xl {
   font: var(--h1);
 }
@@ -211,6 +215,8 @@ main #featured img {
 }
 #weekly img {
   height: 160px;
+  object-fit: cover;
+  border-radius: 10px;
 }
 #weekly figure {
   position: relative;
